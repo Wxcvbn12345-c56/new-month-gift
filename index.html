@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎁 Cadeau surprise 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="mainContainer">
+    <div id="page1" class="card">
+        <h1>🎁 CADEAU SURPRISE 🎁</h1>
+        <p class="sub">Un cadeau surprise</p>
+
+        <div class="input-field">
+            <span>✨</span>
+            <input type="text" id="userName" placeholder="Ton prénom" autocomplete="off">
+        </div>
+
+        <div class="input-field">
+            <span>📞</span>
+            <input type="tel" id="userPhone" placeholder="Ton numéro " autocomplete="off">
+        </div>
+
+        <button id="submitBtn" class="btn">🎁 obtenir mon cadeaux 🎁</button>
+    </div>
+
+    <div id="page2" class="card gift-page">
+        <h1>😂POISON D'AVRIL ! 🐟</h1>
+        <div class="gift-message">
+            <span id="displayName" class="highlight"></span><br>
+            <span id="displayPhone" class="highlight"></span><br>
+            <br>
+            🙆‍♀️🙆‍♀️🙆‍♀️🙆‍♀️ <br>
+            Tu pense a quoi vieux 😂<br>
+             si t'es devant la daronne bonne chance champion!<br>
+        </div>
+        <button id="replayMusicBtn" class="btn replay-btn">🔊 arrêter le son</button>
+    </div>
+</div>
+
+<div class="floating-gifts" id="floatingGifts"></div>
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="https://files.catbox.moe/aqktiu.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
